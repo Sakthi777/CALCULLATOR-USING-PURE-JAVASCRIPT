@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculator</title>
+    <script src="cal.js"></script>
+</head>
+<body>
+
+<div id="container">
+
+        <h1>calulator</h1>
+        <div id="calculator">
+            <div id="result">
+                <p id="p1"></p>
+            </div>
+            <div id="keyboard">
+              
+  <button class="operator" onclick="remove('')">C</button> 
+  <button class="operator" onclick="backsapce('CE')">CE</button> 
+  <button class="operator" onclick="send('%')">%</button>
+  <button id="main_operator"class="operator" onclick="send('/')">&#247;</button>
+  <button class="number"onclick="send('7')">7</button>
+  <button class="number"onclick="send('8')">8</button>
+  <button class="number" onclick="send('9')">9</button>
+  <button  id="main_operator_1"class="operator" onclick="send('*')">&times;</button>
+  <button class="number" onclick="send('4')">4</button> 
+  <button class="number" onclick="send('5')">5</button>
+  <button class="number" onclick="send('6')">6</button>
+  <button id="main_operator" class="operator" onclick="send('-')">-</button>
+  <button class="number" onclick="send('1')">1</button>
+  <button class="number" onclick="send('2')">2</button>
+  <button class="number" onclick="send('3')">3</button>
+  <button id="main_operator_1" class="operator" onclick="send('+')">+</button>
+  <button class="empty" onclick="empty( )"></button>
+  <button class="number" onclick="send('0')">0</button>
+  <button class="empty" onclick="empty( )"></button>
+  <button id="main_operator" class="operator" onclick="ok('=')">=</button>   
+                
+            </div>
+        </div>
+        </div>
+
+        <button onclick="window.print()">Print this page</button>
+    </body>
+</html>
